@@ -4,8 +4,8 @@ I am studying ways to improve the quality of disabled people through the improve
 
 The first step is to determine the physics parameters. Therefore, I developed the following functions:
 
- * Function "parameters.m": Return the moment of inertia and vector of center of mass and center of the rear axle.
- * General parameters for the wheelchair used. 
+ * Calculation of Moment of Inertia: Contains experiment and algorithms to calculate the moment of inertia.
+ * Wheelie Simulation: Contains files to simulate the wheelie task of wheelchair from the optimization of optical control.
 
 I have been working since last year. Therefore, I still have some code done to add in this repository. I will update it as soon I can. 
 
