@@ -9,7 +9,7 @@ m_step = 25.*h_step.^2;         % Using BMI 25
 w = sys_wheelchair;
 
 % Center of Gravity of wheelchair
-CG_wc = [0.193; -0.173];
+CG_wc = [0.193; -0.173];        % Em relação ao hip
 
 % deslocamento
 d_step = linspace(-0.05, 0.15, N);
@@ -37,9 +37,9 @@ for i=1:N
 end
 
 contourf(X.*100, Y, torque_step, 'ShowText', 'on')
-    title('Torque para a eminência do \it wheelie \rm[N.m]')
-    xlabel('Deslocamento longitudinal do CG [cm]'); 
-    ylabel('Altura do Usuário [m]');
+    title('Rising torque requirement [N.m]')
+    xlabel('Longitudinal distance of rear axle and hip [cm]'); 
+    ylabel('User height [m]');
 
 % Add mass
 hold on
