@@ -37,9 +37,9 @@ for i=1:N
 end
 
 contourf(X.*100, Y, torque_step, 'ShowText', 'on')
-    title('Rising torque requirement [N.m]')
+    title('Lift off torque [N.m]')
     xlabel('Longitudinal distance of rear axle and hip [cm]'); 
-    ylabel('User height [m]');
+    ylabel('User’s stature[m]');
 
 % Add mass
 hold on

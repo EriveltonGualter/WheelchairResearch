@@ -169,6 +169,10 @@ function [ q, Jr ] = parameters(varargin)
     q(1,1) = CMr(1,1) - Px;
     q(2,1) = CMr(2,1) - Py;
     
+    q 
+    x = q(1,1)*w.g/(q(2,1)+w.R)
+    tau_lim = (w.Mcr + w.JR/(w.R^2))*w.R*x
+    
     % Resultant moment of inertia in CG -----------------------------------
     Jr = Jpg + Mt * ((CMpx - CMr(1,1))^2 + (CMpy - CMr(2,1))^2) + ...
         Jcg + w.Mc *((CMcx - CMr(1,1))^2 + (CMcy - CMr(2,1))^2);
@@ -190,7 +194,7 @@ function [ q, Jr ] = parameters(varargin)
     xlabel('Meters [m]');
     ylabel('Meters [m]');
     grid
-    
+
 end
 
 
