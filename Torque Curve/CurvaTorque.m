@@ -1,6 +1,3 @@
-clear all
-close all
-
 N = 40;                         % Number of interaction 
 h_step = linspace(1.6, 1.9, N); % Height of the user
 m_step = 25.*h_step.^2;         % Using BMI 25
@@ -11,7 +8,7 @@ w = sys_wheelchair;
 % Center of Gravity of wheelchair
 CG_wc = [0.193; -0.173];        % Em relação ao hip
 
-% deslocamento
+% Deslocamento
 d_step = linspace(-0.05, 0.15, N);
 
 % Center of Gravity for the users (1.6 - 1.9 m)
@@ -37,9 +34,12 @@ for i=1:N
 end
 
 contourf(X.*100, Y, torque_step, 'ShowText', 'on')
-    title('Lift off torque [N.m]')
-    xlabel('Longitudinal distance of rear axle and hip [cm]'); 
-    ylabel('User’s stature[m]');
+    title('Torque para transição de fases [N.m]')
+    xlabel('Distancia longitudinal do eixo traseiro e ombro [cm]'); 
+    ylabel('Altura do Usuário [m]');
+%     title('Lift off torque [N.m]')
+%     xlabel('Longitudinal distance of rear axle and hip [cm]'); 
+%     ylabel('User’s stature[m]');
 
 % Add mass
 hold on
@@ -48,5 +48,5 @@ a2 = axes('YAxisLocation', 'Right');
 set(a2, 'color', 'none'); 
 set(a2, 'XTick', []);
 set(a2, 'YLim', [m_step(1) m_step(end)]);
-a2.YLabel.String = 'Mass of the user [kg]';
+a2.YLabel.String = 'Massa do usuário [kg]';
 

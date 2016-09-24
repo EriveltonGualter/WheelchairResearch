@@ -2,9 +2,7 @@ clear all
 close all
 
 H  = 1.75;       % [m]
-%Px = -0.056;    % Actual x position of the axle rear in the Jaguaribe wheelchair
 Px = 0;
-% Py = -0.249;    % Actual y position of the axle rear in the Jaguaribe wheelchair
 Py = -0.231;
 
 % If you desire to enter with the mass value, just uncomment here. In

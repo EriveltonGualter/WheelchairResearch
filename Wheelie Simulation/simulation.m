@@ -35,7 +35,7 @@ function [] = simulation(opt)
     extents = [-1 opt.theta(end)*0.3048+1 0 1];
     time = 0;
     tic;
-    while time < opt.ti(end)
+    while time < 5
         subplot(4,2,[1 2 3 4]);
         % Compute the position of the system at the current real world time
         posDraw = interp1(opt.ti',(opt.theta.*0.3048)',time')';

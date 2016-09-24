@@ -1,14 +1,11 @@
-% teste_foufilter3.m
+% foufilter3.m
     clear, clc, close all
     
 % SINAL 
     load('.\Dados Experimentais Oscilacao\Oscilacao_Peq.mat')
     
     plot(t,y_rpm);
-%     point = ginput();
-%     
-%     Ti = point(1,1);
-%     Tf = point(2,1);
+
     Ti = input('Ti: ');
     Tf = input('Tf: ');
 
@@ -89,9 +86,6 @@ w = sys_wheelchair;
 for n=1:n_max-3
     T(n) = t(pos_max(n+2))-t(pos_max(n));
     J(n) = moment_of_inertia(w.Mc,w.g,w.l,T(n));    
-    %delta(n) = log(amp_max(n)/amp_max(n+2));
-    %f_amort(n) = delta(n)/sqrt((2*pi)^2+(delta(n))^2);
-    %n = n+1;
 end
 %f_amort_med = median(f_amort);
 Jmed = median(J)

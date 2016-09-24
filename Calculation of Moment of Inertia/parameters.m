@@ -188,11 +188,11 @@ function [ q, Jr ] = parameters(varargin)
     plot(Px, Py, 'k x');
     circle(Px,Py,0.305, 'k');
     
-    title('Center of Mass of the Human Body');  
+    title('Centro de Massa do Cortpo Humano');  
     axis([-1 1 -1 1.5]);
     axis equal;
-    xlabel('Meters [m]');
-    ylabel('Meters [m]');
+    xlabel('Metros [m]');
+    ylabel('Metros [m]');
     grid
 
 end
