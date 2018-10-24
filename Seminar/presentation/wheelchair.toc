@@ -1,0 +1,17 @@
+\beamer@endinputifotherversion {3.36pt}
+\select@language {english}
+\beamer@sectionintoc {1}{Introduction}{3}{0}{1}
+\beamer@subsectionintoc {1}{1}{Overview Projects}{3}{0}{1}
+\beamer@subsectionintoc {1}{2}{Assistive Technology Research Center}{8}{0}{1}
+\beamer@subsectionintoc {1}{3}{Motivation}{10}{0}{1}
+\beamer@subsectionintoc {1}{4}{Wheelchair}{11}{0}{1}
+\beamer@sectionintoc {2}{Modeling Driven Wheelchair}{14}{0}{2}
+\beamer@subsectionintoc {2}{1}{Overview Wheelie}{20}{0}{2}
+\beamer@subsectionintoc {2}{2}{Modeling Driven Wheelchair}{23}{0}{2}
+\beamer@sectionintoc {3}{Estimation of Parameters}{27}{0}{3}
+\beamer@sectionintoc {4}{Controller}{30}{0}{4}
+\beamer@subsectionintoc {4}{1}{Tips of Biomedical sensors}{30}{0}{4}
+\beamer@subsectionintoc {4}{2}{EMG sensor}{33}{0}{4}
+\beamer@sectionintoc {5}{Conclusion}{38}{0}{5}
+\beamer@subsectionintoc {5}{1}{Video}{38}{0}{5}
+\beamer@subsectionintoc {5}{2}{Repository and informations}{39}{0}{5}

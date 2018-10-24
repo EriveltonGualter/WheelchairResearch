@@ -1,0 +1,69 @@
+\documentclass[aspectratio=169]{beamer}
+\usetheme{CambridgeUS}
+
+\usepackage{color}
+\usepackage{amsfonts}
+\usepackage{comment}
+\usepackage{moreverb}
+
+%% Video stuff
+\usepackage{media9}
+
+\newcommand{\myurlshort}[2]{\href{#1}{\textcolor{gray}{\textsf{#2}}}}
+
+
+
+%%% Start of the presentation
+\title{Adding video in a beamer presentation}
+\author{By \myurlshort{http://biostat.jhsph.edu/~lcollado/}{L Collado-Torres}}
+\date{
+December 5th, 2012
+}
+
+\begin{document}
+
+\begin{frame}[allowframebreaks]
+  \titlepage
+\end{frame}
+
+\begin{frame}[allowframebreaks]
+  \tableofcontents
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Sources}
+
+\begin{frame}
+  \frametitle{You might want to check}
+  \begin{itemize}
+  \item \myurlshort{http://pages.uoregon.edu/noeckel/PDFmovie.html}{PDF with animations} is a great post that ultimately points you to media9.
+  \item \myurlshort{http://www.ctan.org/tex-archive/macros/latex/contrib/media9/}{media9 CTAN page}
+  \item \myurlshort{http://ctan.mirrorcatalogs.com/macros/latex/contrib/media9/doc/media9.pdf}{media9 manual}: open it with Acrobat to see all the nice things.
+  \item \myurlshort{http://makarandtapaswi.wordpress.com/2009/07/10/movie-package-movie15/}{Post about using movie15}: note that movie15 is deprecated.
+  \end{itemize}
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Test}
+
+\begin{frame}
+  \frametitle{Youtube video}
+  \includemedia[
+width=7.11cm,height=4cm,
+activate=pageopen,
+flashvars={
+modestbranding=1 % no YT logo in control bar
+&autohide=1 % controlbar autohide
+&showinfo=0 % no title and other info before start
+&rel=0 % no related videos after end
+},
+url % Flash loaded from URL
+]{}{http://www.youtube.com/v/9bZkp7q19f0?rel=0}
+\end{frame}
+
+\begin{frame}
+	\frametitle{What you need for media9}
+Basically, the newest version of textlive and a new version of Acrobat Reader (above 9 something).
+\end{frame}
+
+\end{document}
